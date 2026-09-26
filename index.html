@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background-color: black;
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .blok {
+        background-color: rgb(92, 64, 142);
+        border-radius: 5px;
+        border-width: 5px;
+        margin: 2px;
+    }
+
+    .kol {
+        flex-direction: column;
+    }
+
+    .obychn {
+        width: 100px;
+        height: 100px;
+    }
+
+    .vys {
+        width: 100px;
+        height: 150px;
+    }
+
+    .niz {
+        width: 100px;
+        height: 50px;
+    }
+
+    .dl {
+        width: 200px;
+        height: 100px;
+    }
+
+    .kol > div:first-child > div:nth-child(2) > div:first-child .obychn:last-child {
+        width: 95px;
+    }
+</style>
+
+<body>
+
+    <div>
+        <div class="kol">
+
+            <div>
+
+                <div class="kol">
+                    <div class="vys blok"></div>
+                    <div class="niz blok"></div>
+                </div>
+
+                <div class="kol">
+
+                    <div>
+                        <div class="obychn blok"></div>
+                        <div class="obychn blok"></div>
+                    </div>
+
+                    <div class="dl blok"></div>
+
+                </div>
+
+            </div>
+
+            <div>
+                <div class="dl blok"></div>
+                <div class="obychn blok"></div>
+            </div>
+
+        </div>
+
+        <div class="kol">
+            <div class="vys blok"></div>
+            <div class="vys blok"></div>
+        </div>
+
+    </div>
+
+</body>
+</html>
